@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo">Креатив</div>
+      <img class="bg" src="./img/bg.jpg" alt="Фоновая картинка" />
+      <div class="content">
+        <h2>Давайте сделаем<br />Что-нибудь творческое</h2>
+        <p>
+          Творчество — процесс деятельности, в результате которого создаются
+          качественно новые материальные и духовные ценности или итог создания
+          объективно нового. Основной критерий, отличающий творчество от
+          изготовления (производства), — уникальность его результата.
+        </p>
+        <a href="#">Начнем?</a>
+      </div>
+      <p class="text-copyright">&copy; WebAO</p>
+    </section>
+    <div class="menu-toggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Работы</a></li>
+        <li><a href="#">Команда</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="social-bar">
+        <ul>
+          <li>
+            <a
+              href="https://www.messenger.com/t/profile.php?id=100000036898405"
+              target="_blank"
+              ><img src="./img/facebook.png" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="http://twitter.com/#!/OgorodnikovAlex" target="_blank"
+              ><img src="./img/twitter.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/aleksey.in100gram"
+              target="_blank"
+              ><img src="./img/instagram.png" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=79021868783"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/whatsapp.png" alt="whatsapp" />
+            </a>
+          </li>
+        </ul>
+        <a href="mailto:alekseyin100gram@yandex.ru" class="email-box">
+          <img src="./img/email.png" alt="e-mail" />
+        </a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
